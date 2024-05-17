@@ -46,3 +46,21 @@ console.log(processedArray);
 
 
 
+
+function formatArrayStrings(strArray, numArray) {
+    return strArray.map((str, index) => {
+        if (numArray[index] % 2 === 0) {
+            // If the corresponding number is even, capitalize the string
+            return str.toUpperCase();
+        } else {
+            // If the corresponding number is odd, convert the string to lowercase
+            return str.toLowerCase();
+        }
+    });
+}
+
+// Example usage:
+const stringArray = ['Hello', 'World', 'Test', 'Array', 'Manipulation'];
+const numArray = processArray([1, 12, 3, 8, 5]); 
+const formattedArray = formatArrayStrings(stringArray, numArray);
+console.log(formattedArray);  
