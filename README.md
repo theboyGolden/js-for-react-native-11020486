@@ -26,3 +26,22 @@
 
 + Print the processedArray
 + print processedArray
+
+# Task 2 explanation
++ This JavaScript function, `formatArrayStrings`, takes two arrays as input: `strArray` and `numArray`. It processes each element of `strArray` based on the corresponding element in `numArray`. If the number at the same index in `numArray` is even, it capitalizes the string in `strArray`. 
++ If the number is odd, it converts the string to lowercase. The processed strings are returned as a new array.
+
++ Here's a breakdown of how the function works:
++ It uses the `map` method to iterate over each element of `strArray`.
++ For each element, it checks the corresponding element in `numArray` using the `index` parameter.
++ If the number is even (`numArray[index] % 2 === 0`), it capitalizes the string using the `toUpperCase` method.
++ If the number is odd, it converts the string to lowercase using the `toLowerCase` method.
++ The processed strings are returned as a new array.
+
++ In the example usage provided:
++ `stringArray` contains five strings: 'Martin', 'Tobius', 'Precious', 'Desmond', and 'Tyler'.
++ `numArray` is obtained by calling the `processArray` function with `[1, 12, 3, 8, 5]`.
++ The `formatArrayStrings` function is then called with `stringArray` and `numArray`.
++ The formatted array, `formattedArray`, is logged to the console.
+
++ The output would depend on the values in `numArray`. For example, if `numArray` is `[1, 12, 3, 8, 5]`, the output would be `['martin', 'TOBIUS', 'precious', 'DESMOND', 'tyler']`, where 'martin' and 'precious' are lowercase because the corresponding numbers are odd, and 'TOBIUS' and 'DESMOND' are uppercase because the corresponding numbers are even.
