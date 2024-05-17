@@ -28,7 +28,7 @@
 + print processedArray
 
 # Task 2 explanation
-+ This JavaScript function, `formatArrayStrings`, takes two arrays as input: `strArray` and `numArray`. It processes each element of `strArray` based on the corresponding element in `numArray`. If the number at the same index in `numArray` is even, it capitalizes the string in `strArray`. 
++ +  JavaScript function, `formatArrayStrings`, takes two arrays as input: `strArray` and `numArray`. It processes each element of `strArray` based on the corresponding element in `numArray`. If the number at the same index in `numArray` is even, it capitalizes the string in `strArray`. 
 + If the number is odd, it converts the string to lowercase. The processed strings are returned as a new array.
 
 + Here's a breakdown of how the function works:
@@ -45,3 +45,23 @@
 + The formatted array, `formattedArray`, is logged to the console.
 
 + The output would depend on the values in `numArray`. For example, if `numArray` is `[1, 12, 3, 8, 5]`, the output would be `['martin', 'TOBIUS', 'precious', 'DESMOND', 'tyler']`, where 'martin' and 'precious' are lowercase because the corresponding numbers are odd, and 'TOBIUS' and 'DESMOND' are uppercase because the corresponding numbers are even.
+
+# Task 3 explanation
++ This JavaScript function, `createUserProfiles`, takes two arrays as input: `originalNames` and `modifiedNames`. It generates user profiles by pairing each element from `originalNames` with the corresponding element from `modifiedNames`. Each profile consists of an auto-incremented ID, the original name, and the modified name. The generated profiles are returned as an array of objects.
+
++ Here's how the function works:
++ It uses the `map` method to iterate over each element of `originalNames`.
++ For each element, it retrieves the corresponding element from `modifiedNames` using the `index` parameter.
++ It constructs a user profile object with three properties:
++ 1. `id`: An auto+incremented ID starting from 1, calculated by adding 1 to the current index.
++ 2. `originalName`: The original name from `originalNames`.
++ 3. `modifiedName`: The modified name from `modifiedNames`.
++ The constructed profile objects are returned as an array.
+
++ In the example usage provided:
++ `originalNames` contains five original names: 'Martin', 'Tobius', 'Precious', 'Dana', and 'Tyler'.
++ `modifiedNames` contains corresponding modified names: 'MARTIN', 'tobius', 'PRECIOUS', 'dana', and 'TYLER'.
++ The `createUserProfiles` function is then called with `originalNames` and `modifiedNames`.
++ The generated user profiles, `userProfiles`, are logged to the console.
+
++ The output would be an array of user profiles, where each profile object contains an ID, the original name, and the modified name, as demonstrated in the example usage.
