@@ -60,7 +60,7 @@ function formatArrayStrings(strArray, numArray) {
 }
 
 // Example usage:
-const stringArray = ['Hello', 'World', 'Test', 'Array', 'Manipulation'];
+const stringArray = ['Martin', 'Tobius', 'Precious', 'Desmond', 'Tyler'];
 const numArray = processArray([1, 12, 3, 8, 5]); 
 const formattedArray = formatArrayStrings(stringArray, numArray);
 console.log(formattedArray);  
